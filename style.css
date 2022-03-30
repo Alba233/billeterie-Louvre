@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Arimo', sans-serif;
+    color: black;
+    font-size: 18px;
+}
+/* ACCUEIL */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 30vh;
+    gap: 30px; 
+}
+#langues{
+    display: flex;
+    width: 200px;
+    cursor: pointer;
+    margin: 25px;
+}
+#louvre{
+    align-self: center;
+    width: 100px;
+    margin-left: 120px;
+    padding: 5px;
+}
+#en{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: .5s;
+}
+#langues:hover #en{
+    opacity: 1;
+    transform: translateX(0);
+}
+h1{
+    font-size: clamp(24px, 12vw, 80px);
+    align-self: center;
+    text-align: center;
+}
+.triangle{
+    height: 10px;
+    padding: 5px 7px;
+    transition: .5s;
+}
+.triangle:hover{
+    transform: rotate(-90deg);
+}
+
+/* CONNECTION */
+
+.container_main{
+    max-width: 1000px;
+    margin: auto;
+}
+   
+.comptes_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+/* DEJA-CLIENT */
+
+.deja_client{
+    width: 60%;
+    box-sizing: content-box;
+    background: url(images/victoire.png) center / cover no-repeat;
+    margin: 15px 5px 15px 11px;
+}
+
+/* déjà client / créer compte / billet */
+h2{
+    font-size: clamp(20px, 12vw, 38px);
+    font-style: normal;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 17px;
+}
+#joconde{
+    font-size: clamp(20px, 12vw, 38px);
+    font-style: normal;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+/* identifier vous */
+h3{
+    font-size: clamp(18px, 12vw, 24px);
+    text-align: center;
+    margin-bottom: 17px;
+}
+/* INPUTS */
+.e-mail{
+    width: 70%;
+    height: 61px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    border: none;
+}
+.e-mail::placeholder{
+    font-size: 16px;
+    padding-left: 10px;
+}
+.mot-de-passe{
+    width: 70%;
+    height: 61px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    border: none;
+}
+.mot-de-passe::placeholder{
+    font-size: 16px;
+    padding-left: 10px;
+}
+#souvenir{
+    margin-left: 35px;
+}
+
+.souvenir_container{
+    padding-left: 35px;
+}
+
+.se_connecter{
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mot{
+    text-align: center;
+    color: black;
+}
+.bouton_connecter{
+    padding: 14px;
+    margin: 10px 0px 10px 0px;
+    border: solid black 1px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.bouton_connecter:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: solid 1px black;
+}
+
+/* CREER-COMPPTE */
+.nouveau_compte{
+    width: 50%;
+    background: url(images/joconde.png) center / cover no-repeat;
+    color: white;
+    margin: 15px 11px 15px 15px;
+    padding: 15px;
+    box-sizing: content-box;
+    text-align: center;
+}
+#creer_compte{
+    padding: 14px;
+    margin-top: 17px;
+    border: solid black 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#creer_compte:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: solid 1px white;
+}
+#paragrpahe{
+    font-size: clamp(15px, 8vw, 24px);
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+/* OFFRE CONTAINER */
+.offres_container{
+    padding: 15px;
+    width: min(1034px, 90%);
+    margin: auto; 
+}
+#button_container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clic{
+    border: solid black 1px;
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#visite{
+    border: solid black 1px;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.clic:hover{
+    background-color: rgba(255, 255, 255, 0,22);
+    color: rgb(26, 25, 25);
+    border: none;
+}
+#visite:hover{
+    background-color: rgba(255, 255, 255, 0,22);
+    color: rgb(26, 25, 25);
+    border: none;
+}
+#new_button{
+    display: none;
+}
+
+/* FOOTER */
+footer{
+    background: url(images/footer.png) center / cover no-repeat;
+    padding: 15px;
+}
+.suivez-nous{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+}
+#follow{
+    margin-top: 35px;
+}
+.media{
+    margin: 5px;
+}
+#text_paiement {
+    margin-top: 15px;
+}
+.paiement{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+}
+.logo{
+    height: 40px;
+    padding: 15px;
+}
+#visa{
+    height: 25px;
+    padding-bottom: 20px;
+}
+.reseaux{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+}
+.liens{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.icones{
+    height: 45px;
+    border: solid gray 1px;
+    border-radius: 50%;
+    background-color: white;
+}
+p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.icones:hover{
+    border-color: white;
+}
+#arrow{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+
+}
+.élément a:after{
+    content: "";
+    display: block;
+    margin-top: 3px;
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    right: 0px;
+    transition: width .2s ease, background-color 2s ease;
+}
+.élément{
+    color: white;
+    padding: 10px;
+}
+.élément:hover:after{
+    width: 60%;
+    position: relative;
+    background-color: white;
+}
+@media (max-width: 900px){
+    #louvre{
+        display: none;
+    }
+    h1{
+        margin: 0;
+    }
+    .comptes_container{
+        flex-wrap: wrap;
+    }
+    .deja_client{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nouveau_compte{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .offres_container{
+        width: 60%;
+        flex-wrap: wrap;
+    }
+    .button_container{
+        flex-wrap: wrap;
+    }
+    .clic{
+        font-size: 20px;
+    }
+    #visite{
+        font-size: 20px;
+    }
+    #new_button{
+        display: block;
+        border: solid black 1px;
+        font-size: 20px;
+        padding: 20px;
+        color: black;
+    }
+    #new_button:hover{
+        background-color: rgb(63, 63, 63);
+        color: rgb(228, 226, 226);
+        border: none;
+    }
+    #visite{
+        display: none;
+    }
+    
+}

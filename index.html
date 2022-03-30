@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Billeterie du Louvre</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <img src="./images/pyramide-du-louvre.png" id="louvre"alt="batiment du Louvre logo">
+        <h1>Billeterie du Louvre</h1>
+        <div id="langues">
+            <span>Français</span>
+            <img src="./images/select list.png" class="triangle" alt="flèche">
+            <span id="en">Anglais</span> 
+        </div> 
+    </header>
+   
+    <div class="container_main">
+        <div class="comptes_container">
+            <section class="deja_client">
+                <h2>Déjà client?</h2>
+                <h3>Identifiez-vous</h3>
+                <input type="text" class="e-mail" placeholder="  votre e-mail">
+                <input type="text" class="mot-de-passe" placeholder="  votre mot de passe">
+                <div class="souvenir_container">
+                    <input id="box" type="checkbox" id="souvenir">
+                    <label for="souvenir">Souviens-toi de moi</label>
+                </div>
+                <div class="se_connecter">
+                    <button class="bouton_connecter">Se connecter</button>
+                    <p id="mot">Mot de passe oublié?</p>
+                </div>
+            </section>
+    
+            <section class="nouveau_compte">
+            <h2 id="joconde">Créer un compte</h2>
+            <p id="paragraphe">Ce compte vous permet de télécharger et imprimer vos billets, et de modifier la date, l'horaire ou le porteur d'un billet.
+            </p>
+            <button id="creer_compte" type="button">Créer un compte</button>
+            </section>
+        </div>
+    </div>
+    <div class="offres_container">
+        <h2>Billets et offres</h2>
+        <div id="button_container">
+            <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/calendar/eventCode/MusWeb"><button type="submit" class="clic">Individuel</button></a>
+
+            <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/calendar/eventCode/GA"><button type="submit" class="clic">Goupes</button></button>
+
+            <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/multibuy/events/INDIVIDUEL"><button type="submit" class="clic">Audioguide</button>
+
+            <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/calendar/eventCode/GA"><button type="submit" id="visite"  >Visites guidées et ateliers</button>
+
+            <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/calendar/eventCode/GA"><button type="submit" id="new_button" class="clic">Visites guidées</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="suivez-nous">
+            <p id="follow">Suivez-nous</p>
+                <div class="reseaux">
+                    <div class="media">
+                        <img src="./images/reseaux-sociaux/facebook.png" alt="icone de facebook" class="icones"></div>
+                    <div class="media">
+                        <img src="./images/reseaux-sociaux/instagram.png" alt="icone de instagram" class="icones"></div>
+                    <div class="media">
+                        <img src="./images/reseaux-sociaux/twitter.png" alt="icone de twitter" class="icones"></div>
+                    <div class="media">
+                        <img src="./images/reseaux-sociaux/youtube.png" alt="icone de youtube" class="icones"></div>
+                    <div class="media">
+                        <img src="./images/reseaux-sociaux/pinterest.png" alt="icone de pinterest" class="icones"></div>
+                    <div class="media">
+                        <img src="./images/reseaux-sociaux/linkedin.png" alt="icone de linkedin" class="icones"></div>
+                </div>
+        </div>
+    
+        <div class="paiement">
+            <p id="text_paiement">Paiement 100% sécurisé</p>
+            <div>
+                <img src="./images/paiement/MasterCard_Logo.png" alt="logo de mastercard" class="logo">
+                <img src="./images/paiement/Safekey.png" alt="logo de mastercard" class="logo">
+                <img src="./images/paiement/3d-secure.png" alt="logo de mastercard" class="logo">
+                <img src="./images/paiement/CB.jpg" alt="logo de mastercard" class="logo">
+                <img src="./images/paiement/Visalogo.png" alt="logo de visa" id="visa">
+            </div>
+        </div>
+
+        <img id="arrow" src="./images/flèche.png" alt="">
+
+        <div class="liens">
+            <a class="élément" href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/calendar/eventCode/MusWeb">Tarifs</a>
+            <a class="élément" href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/contacts">Contactez-nous</a>
+            <a class="élément" href="https://www.ticketlouvre.fr/louvre/b2c/assets/CGV-B2C-Prod/FR_CGV_MUSEE_LOUVRE_INDIVIDUELS.pdf">CGV</a>
+            <a class="élément" href="https://www.ticketlouvre.fr/louvre/b2c/assets/CGV-B2C-Prod/FR_CGV_EPML_GROUPES.pdf">CGV groupes</a>
+            <a class="élément" href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/FAQ">FAQ</a>
+            <a class="élément" href="https://affluences.com/louvre">Temps d’attente</a>
+        </div>
+        <p>© Musée de Louvre - Tout droit de reproduction réservés</p>
+    </footer>
+  
+    
+</body>
+</html>
